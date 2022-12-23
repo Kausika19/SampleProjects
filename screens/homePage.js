@@ -76,14 +76,14 @@ export default class StartingPage extends Component {
     this.handleClick(2);
 
     const req =
-      "https://newsapi.org/v2/top-headlines?category=business&apiKey=3549e210405a4f6893ce58618eff6353";
+      "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=3549e210405a4f6893ce58618eff6353";
     this.getArticles(req);
   };
 
   sports = () => {
     this.handleClick(3);
     const req =
-      "https://newsapi.org/v2/top-headlines?category=sports&apiKey=3549e210405a4f6893ce58618eff6353";
+      "https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=3549e210405a4f6893ce58618eff6353";
     this.getArticles(req);
   };
 
@@ -97,13 +97,12 @@ export default class StartingPage extends Component {
   technology = () => {
     this.handleClick(5);
     const req =
-      "https://newsapi.org/v2/top-headlines?category=technology&apiKey=3549e210405a4f6893ce58618eff6353";
+      "https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=3549e210405a4f6893ce58618eff6353";
     this.getArticles(req);
   };
 
   render() {
-    const { isLoading, active, active1, active2, active3, articles } =
-      this.state;
+    const { isLoading, active, articles } = this.state;
     return (
       <SafeAreaView>
         <View>
