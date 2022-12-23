@@ -4,17 +4,13 @@ import {
   View,
   Text,
   TouchableOpacity,
-  Image,
   StyleSheet,
   useWindowDimensions,
   ScrollView,
   Alert,
 } from "react-native";
 
-import mainImage from "../assets/image.png";
-
 import CustomInput from "../components/CustomInput";
-import CustomButton from "../components/CustomButton";
 import { useNavigation } from "@react-navigation/native";
 import { useForm, Controller } from "react-hook-form";
 
